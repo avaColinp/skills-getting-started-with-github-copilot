@@ -58,16 +58,100 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  padding: 18px;
+  border: 1px solid #e0e4f2;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff 0%, #f7f8ff 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(26, 35, 126, 0.12);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #0066cc;
+  font-size: 1.1rem;
+}
+
+.activity-card .activity-description {
+  margin-bottom: 14px;
+  color: #555;
+}
+
+.activity-card .activity-detail {
+  margin-bottom: 6px;
+  font-size: 0.94rem;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  background-color: #eef1ff;
+}
+
+.participants-section h5 {
+  margin-bottom: 7px;
+  color: #1a237e;
+  font-size: 0.92rem;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  color: #424866;
+  font-size: 0.92rem;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid rgba(83, 109, 254, 0.12);
+}
+
+.participants-list li:last-child {
+  border-bottom: none;
+}
+
+.participant-remove {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #7b849d;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.participant-remove:hover,
+.participant-remove:focus-visible {
+  border-color: #ffcdd2;
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.participant-remove svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .activity-card p {
